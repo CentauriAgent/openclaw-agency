@@ -1,0 +1,36 @@
+{
+  "name": "agent-teams",
+  "version": "0.1.0",
+  "description": "Coordinate multiple specialized agents (architect, coder, tester, reviewer, docs, security, frontend, backend, devops) working together on complex tasks using Beads for task management and dependency tracking.",
+  "author": "Centauri <centauriagent@proton.me>",
+  "contributors": ["Derek Ross <derekross@gmail.com>"],
+  "keywords": [
+    "agents",
+    "teams", 
+    "swarm",
+    "orchestration",
+    "beads",
+    "multi-agent",
+    "parallel",
+    "dependencies"
+  ],
+  "agents": [
+    {"role": "architect", "description": "System design, API design, technical decisions"},
+    {"role": "coder", "description": "Implementation, feature development, bug fixes"},
+    {"role": "tester", "description": "Unit tests, integration tests, coverage"},
+    {"role": "reviewer", "description": "Code review, quality checks, best practices"},
+    {"role": "docs", "description": "Documentation, README, API docs"},
+    {"role": "security", "description": "Vulnerability analysis, auth review"},
+    {"role": "frontend", "description": "UI/UX, React, components, accessibility"},
+    {"role": "backend", "description": "API endpoints, database, server logic"},
+    {"role": "devops", "description": "CI/CD, deployment, infrastructure"}
+  ],
+  "dependencies": {
+    "tools": ["exec", "sessions_spawn", "sessions_list", "sessions_history"]
+  },
+  "requires": {
+    "external": ["bd (beads CLI) - https://github.com/soapbox-pub/beads"]
+  },
+  "repository": "https://github.com/CentauriAgent/agent-teams-skill",
+  "license": "MIT"
+}
