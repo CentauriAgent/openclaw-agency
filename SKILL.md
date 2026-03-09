@@ -67,13 +67,48 @@ Does it span multiple areas?
 | Quick research | Single Trend Researcher or Analytics Reporter |
 | Content campaign | Marketing team (2-4 agents) |
 
+### ⚠️ MANDATORY: Beads Before Spawning
+
+**Every agent spawn MUST have a beads task. No exceptions.**
+
+Before spawning ANY agent, the lead agent MUST:
+1. Create an epic (if one doesn't exist): `bd create --type=epic --title="Project Name"`
+2. Create a task for each agent: `bd create --type=task --title="Task description" --parent=<epic-id>`
+3. Set dependencies: `bd dep add <child> <parent>`
+4. Include the bead ID in the spawn template so the agent can claim and close it
+
+**Why this is non-negotiable:**
+- The Agency Dashboard reads from beads — no task = invisible work
+- Untracked work can't be monitored, reviewed, or learned from
+- If it's not in beads, it didn't happen
+
+**The lead agent spawn flow:**
+```bash
+# 1. Create epic
+bd create --type=epic --title="OpenClaw Agency Dashboard Phase 2"
+# Returns: clawd-xyz
+
+# 2. Create tasks for each agent
+bd create --type=task --title="Build dependency graph view" --parent=clawd-xyz
+# Returns: clawd-xyz.1
+
+# 3. Set dependencies
+bd dep add clawd-xyz.2 clawd-xyz.1
+
+# 4. THEN spawn with bead ID in the prompt
+sessions_spawn(task="Your task is clawd-xyz.1: Build dependency graph view. First run: bd update clawd-xyz.1 --status=in_progress ...")
+```
+
+**Never spawn an agent without a beads task. Never.**
+
 ### Rules of Thumb
 
-1. **Start small** — spawn the minimum agents needed, add more if work expands
+1. **Beads first** — create epic + tasks BEFORE spawning any agents
 2. **Dependencies first** — always set `bd dep` before spawning agents
-3. **Parallel when possible** — independent tasks run simultaneously
-4. **One agent, one task** — don't overload agents with multiple bead tasks
-5. **Personality matters** — use the spawn templates as-is; the voice helps agents stay focused
+3. **Start small** — spawn the minimum agents needed, add more if work expands
+4. **Parallel when possible** — independent tasks run simultaneously
+5. **One agent, one task** — don't overload agents with multiple bead tasks
+6. **Personality matters** — use the spawn templates as-is; the voice helps agents stay focused
 
 ---
 
