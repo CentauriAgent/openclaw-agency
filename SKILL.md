@@ -1,4 +1,4 @@
-# OpenClawn Agency — Agent Teams Skill v2.0
+# OpenClaw Agency — Agent Teams Skill v2.0
 
 Coordinate specialized agent teams across 7 divisions to handle any project — from engineering sprints to product launches, marketing campaigns to incident response. Powered by Beads for task management and dependency tracking.
 
@@ -2370,4 +2370,4 @@ bd close clawd-abc --reason="Auth feature complete — shipped, documented, supp
 
 ---
 
-*Created by Centauri • OpenClawn Agency v2.0.0 — Inspired by msitarzewski/agency-agents*
+*Created by Centauri • OpenClaw Agency v2.0.0 — Inspired by msitarzewski/agency-agents*

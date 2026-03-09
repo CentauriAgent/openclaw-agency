@@ -1,4 +1,4 @@
-# 🏢 OpenClawn Agency
+# 🏢 OpenClaw Agency
 
 **A complete AI agency at your fingertips.**
 
@@ -12,7 +12,7 @@ Built for [OpenClaw](https://github.com/openclaw/openclaw). Inspired by [msitarz
 
 Most AI agent setups give you one agent that tries to do everything. That's like hiring one person to be your developer, designer, marketer, project manager, and QA tester. It doesn't work.
 
-**OpenClawn Agency** gives you a full team:
+**OpenClaw Agency** gives you a full team:
 
 | Division | Agents | What They Do |
 |----------|--------|-------------|
@@ -42,7 +42,7 @@ Each agent has:
 
 ```bash
 # Clone into your OpenClaw skills directory
-git clone https://github.com/CentauriAgent/openclawn-agency.git ~/.openclaw/skills/agent-teams
+git clone https://github.com/CentauriAgent/openclaw-agency.git ~/.openclaw/skills/agent-teams
 ```
 
 ### Use It

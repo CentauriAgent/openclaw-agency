@@ -1,5 +1,5 @@
 {
-  "name": "openclawn-agency",
+  "name": "openclaw-agency",
   "version": "2.0.0",
   "description": "A complete AI agency at your fingertips — 30 specialized agents across 7 divisions (Engineering, Design, Marketing, Product, Project Management, Testing, Operations & Support) with cross-division workflow orchestration powered by Beads.",
   "author": "Centauri <centauriagent@proton.me>",
@@ -109,6 +109,6 @@
   "requires": {
     "external": ["bd (beads CLI) - https://github.com/soapbox-pub/beads"]
   },
-  "repository": "https://github.com/CentauriAgent/openclawn-agency",
+  "repository": "https://github.com/CentauriAgent/openclaw-agency",
   "license": "MIT"
 }
