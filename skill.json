@@ -1,29 +1,107 @@
 {
-  "name": "agent-teams",
-  "version": "0.1.0",
-  "description": "Coordinate multiple specialized agents (architect, coder, tester, reviewer, docs, security, frontend, backend, devops) working together on complex tasks using Beads for task management and dependency tracking.",
+  "name": "openclaw-agency",
+  "version": "2.0.0",
+  "description": "A complete AI agency at your fingertips — 30 specialized agents across 7 divisions (Engineering, Design, Marketing, Product, Project Management, Testing, Operations & Support) with cross-division workflow orchestration powered by Beads.",
   "author": "Centauri <centauriagent@proton.me>",
   "contributors": ["Derek Ross <derekross@gmail.com>"],
   "keywords": [
+    "agency",
     "agents",
-    "teams", 
+    "teams",
     "swarm",
     "orchestration",
     "beads",
     "multi-agent",
     "parallel",
-    "dependencies"
+    "dependencies",
+    "marketing",
+    "design",
+    "product",
+    "testing",
+    "devops",
+    "support",
+    "project-management"
   ],
-  "agents": [
-    {"role": "architect", "description": "System design, API design, technical decisions"},
-    {"role": "coder", "description": "Implementation, feature development, bug fixes"},
-    {"role": "tester", "description": "Unit tests, integration tests, coverage"},
-    {"role": "reviewer", "description": "Code review, quality checks, best practices"},
-    {"role": "docs", "description": "Documentation, README, API docs"},
-    {"role": "security", "description": "Vulnerability analysis, auth review"},
-    {"role": "frontend", "description": "UI/UX, React, components, accessibility"},
-    {"role": "backend", "description": "API endpoints, database, server logic"},
-    {"role": "devops", "description": "CI/CD, deployment, infrastructure"}
+  "divisions": [
+    {
+      "name": "Engineering",
+      "emoji": "🏗️",
+      "agents": [
+        {"role": "architect", "description": "System design, API design, technical decisions"},
+        {"role": "coder", "description": "Implementation, feature development, bug fixes"},
+        {"role": "tester", "description": "Unit tests, integration tests, coverage"},
+        {"role": "reviewer", "description": "Code review, quality checks, best practices"},
+        {"role": "docs", "description": "Documentation, README, API docs"},
+        {"role": "security", "description": "Vulnerability analysis, auth review, OWASP"},
+        {"role": "frontend", "description": "UI/UX, React, components, accessibility"},
+        {"role": "backend", "description": "API endpoints, database, server logic"},
+        {"role": "devops", "description": "CI/CD, deployment, Docker, infrastructure"}
+      ]
+    },
+    {
+      "name": "Design",
+      "emoji": "🎨",
+      "agents": [
+        {"role": "ui-designer", "description": "Visual design, component libraries, design systems"},
+        {"role": "ux-researcher", "description": "User testing, behavior analysis, usability research"},
+        {"role": "brand-guardian", "description": "Brand identity, consistency, voice/tone guidelines"}
+      ]
+    },
+    {
+      "name": "Marketing",
+      "emoji": "📣",
+      "agents": [
+        {"role": "growth-hacker", "description": "User acquisition, viral loops, conversion funnels"},
+        {"role": "content-creator", "description": "Multi-platform content, editorial calendars, SEO"},
+        {"role": "social-strategist", "description": "Cross-platform social strategy, campaigns"},
+        {"role": "community-builder", "description": "Forum/Discord community growth, authentic engagement"}
+      ]
+    },
+    {
+      "name": "Product",
+      "emoji": "📦",
+      "agents": [
+        {"role": "sprint-prioritizer", "description": "Agile planning, RICE/MoSCoW prioritization"},
+        {"role": "trend-researcher", "description": "Market intelligence, competitive analysis"},
+        {"role": "feedback-synthesizer", "description": "User feedback analysis, insight extraction"}
+      ]
+    },
+    {
+      "name": "Project Management",
+      "emoji": "🎬",
+      "agents": [
+        {"role": "studio-producer", "description": "Portfolio management, strategic alignment"},
+        {"role": "project-shepherd", "description": "Cross-functional coordination, timeline management"},
+        {"role": "experiment-tracker", "description": "A/B tests, hypothesis validation, data-driven decisions"}
+      ]
+    },
+    {
+      "name": "Testing",
+      "emoji": "🧪",
+      "agents": [
+        {"role": "reality-checker", "description": "Evidence-based QA, stops fantasy approvals"},
+        {"role": "performance-benchmarker", "description": "Load testing, speed testing, Core Web Vitals"},
+        {"role": "api-tester", "description": "API validation, integration testing, contract testing"},
+        {"role": "accessibility-auditor", "description": "WCAG compliance, screen reader testing"}
+      ]
+    },
+    {
+      "name": "Operations & Support",
+      "emoji": "🛟",
+      "agents": [
+        {"role": "support-responder", "description": "Customer service, issue resolution, knowledge base"},
+        {"role": "analytics-reporter", "description": "Data analysis, dashboards, KPI tracking"},
+        {"role": "infrastructure-maintainer", "description": "System reliability, monitoring, uptime"},
+        {"role": "compliance-checker", "description": "Legal compliance, regulatory, risk management"}
+      ]
+    }
+  ],
+  "workflows": [
+    "ship-a-feature",
+    "competitive-analysis",
+    "conference-prep",
+    "incident-response",
+    "product-launch"
   ],
   "dependencies": {
     "tools": ["exec", "sessions_spawn", "sessions_list", "sessions_history"]
@@ -31,6 +109,6 @@
   "requires": {
     "external": ["bd (beads CLI) - https://github.com/soapbox-pub/beads"]
   },
-  "repository": "https://github.com/CentauriAgent/agent-teams-skill",
+  "repository": "https://github.com/CentauriAgent/openclaw-agency",
   "license": "MIT"
 }
