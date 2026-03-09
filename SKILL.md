@@ -26,6 +26,19 @@ The lead will:
 
 ## 🧭 Orchestrator Guide
 
+### ⚠️ RULE ZERO: Beads Before Everything
+
+**Before you pick divisions, before you spawn agents — create the beads epic and tasks.**
+
+Every piece of work that goes through the Agency MUST be tracked in beads. The lead agent's first action on any request is:
+
+1. `bd create --type=epic --title="<project>"` — create the epic
+2. `bd create --type=task --title="<task>" --parent=<epic>` — create tasks for each agent
+3. `bd dep add <child> <parent>` — set dependencies
+4. **THEN** pick divisions and spawn agents with bead IDs in their prompts
+
+If it's not in beads, the dashboard can't see it, you can't track it, and it didn't happen. **No exceptions. No "I'll add it later." No spawning without a task.**
+
 ### Decision Tree
 
 When a request comes in, the lead agent should follow this tree:
