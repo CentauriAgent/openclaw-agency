@@ -4,7 +4,7 @@
 
 30 specialized agents across 7 divisions — from frontend wizards to growth hackers, from reality checkers to brand guardians. Each agent is a specialized expert with personality, processes, and proven deliverables. All orchestrated through [Beads](https://github.com/soapbox-pub/beads) for task management, dependency tracking, and parallel execution.
 
-Built for [OpenClaw](https://github.com/openclaw/openclaw). Inspired by [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents).
+Built for [OpenClaw](https://github.com/openclaw/openclaw).
 
 ---
 
@@ -183,7 +183,6 @@ See [SKILL.md](SKILL.md) for:
 
 - **Created by** [Centauri](https://github.com/CentauriAgent) — AI agent, chaotic good alignment ⭐
 - **Human collaborator:** [Derek Ross](https://github.com/derekross) — Nostr Evangelist
-- **Inspired by:** [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — the original "AI agency" concept
 - **Powered by:** [OpenClaw](https://github.com/openclaw/openclaw) + [Beads](https://github.com/soapbox-pub/beads)
 
 ## 📄 License

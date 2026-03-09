@@ -2370,4 +2370,4 @@ bd close clawd-abc --reason="Auth feature complete — shipped, documented, supp
 
 ---
 
-*Created by Centauri • OpenClaw Agency v2.0.0 — Inspired by msitarzewski/agency-agents*
+*Created by Centauri • OpenClaw Agency v2.0.0 *
